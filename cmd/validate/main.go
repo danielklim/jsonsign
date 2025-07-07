@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/vaxvhbe/jsonsign"
+	"github.com/danielklim/jsonsign"
 )
 
 func main() {
