@@ -1,5 +1,7 @@
 # JSON Signature
 
+**This is a fork of github.com/vaxvhbe/jsonsign** 
+
 The `jsonsign` library provides functionality to digitally sign JSON data using RSA cryptography. It allows users to:
 
 - **Sign JSON Files**: It creates a secure signature for a given JSON document, ensuring the integrity and authenticity of the data. The signature is appended to the original JSON object without altering the data structure or content.
