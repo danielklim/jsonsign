@@ -36,7 +36,7 @@ func main() {
 	js.Algorithm = *alg
 
 	// Validate the signed JSON file
-	if err := js.Validate(*jsonFilePath); err != nil {
+	if _, err := js.ValidateFile(*jsonFilePath); err != nil {
 		fmt.Printf("cannot validate json 💥: %s\n", err)
 		os.Exit(1)
 	}

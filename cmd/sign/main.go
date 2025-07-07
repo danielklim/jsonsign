@@ -37,7 +37,7 @@ func main() {
 	js.Algorithm = *alg
 
 	// Sign the JSON file
-	if err := js.Sign(*jsonFilePath); err != nil {
+	if err := js.SignFile(*jsonFilePath); err != nil {
 		fmt.Printf("cannot sign json 💥: %s\n", err)
 		os.Exit(1)
 	}

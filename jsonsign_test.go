@@ -14,11 +14,11 @@ func SignAndVerifyAll(
 ) {
 	for k, v := range DsaStrings {
 		Signer.Algorithm = k
-		if err := Signer.Sign(TestJsonFilePath); err != nil {
+		if err := Signer.SignFile(TestJsonFilePath); err != nil {
 			t.Errorf("error signing %s", v)
 		}
 		Validator.Algorithm = k
-		if err := Validator.Validate(TestJsonFilePath); err != nil {
+		if _, err := Validator.ValidateFile(TestJsonFilePath); err != nil {
 			t.Errorf("error validating %s", v)
 		}
 	}
